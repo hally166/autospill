@@ -30,11 +30,11 @@ plot.scatter <- function(
     )
 
     marker.slope.unco <- 1 / spillover.unco.coef
-    marker.intercept.unco <- - spillover.unco.inte / spillover.unco.coef
+    marker.intercept.unco <- spillover.unco.inte / spillover.unco.coef
     marker.x.intercept.unco <- spillover.unco.inte
 
     marker.slope.comp <- 1 / spillover.comp.coef
-    marker.intercept.comp <- - spillover.comp.inte / spillover.comp.coef
+    marker.intercept.comp <- spillover.comp.inte / spillover.comp.coef
     marker.x.intercept.comp <- spillover.comp.inte
 
     x.transform <- flow.control$transform[[
