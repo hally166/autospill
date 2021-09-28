@@ -13,6 +13,7 @@
 
 get.worker.process <- function( worker.process.n )
 {
-    ifelse( worker.process.n != 0, worker.process.n, detectCores() )
+  if(.Platform$OS.type == "windows"){1}
+  else { parallel::detectCores() }
 }
 
